@@ -65,17 +65,17 @@ public class MonaPuzzleLockEditor : Editor
 
         // BUTTONS
 
-        if (GUILayout.Button(MonaPuzzleLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        {
-            Application.OpenURL(MonaPuzzleLock.Link1);
-        }
+        //if (GUILayout.Button(MonaPuzzleLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        //{
+        //    Application.OpenURL(MonaPuzzleLock.Link1);
+        //}
 
-        GUILayout.Space(1);
+        //GUILayout.Space(1);
 
-        if (GUILayout.Button(MonaPuzzleLock.ButtonTitle2, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        {
-            Application.OpenURL(MonaPuzzleLock.Link2);
-        }
+        //if (GUILayout.Button(MonaPuzzleLock.ButtonTitle2, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        //{
+        //    Application.OpenURL(MonaPuzzleLock.Link2);
+        //}
 
         GUILayout.Space(1);
 

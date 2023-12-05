@@ -65,17 +65,17 @@ public class MonaKeypadLockEditor : Editor
 
         // BUTTONS
 
-        if (GUILayout.Button(MonaKeypadLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        {
-            Application.OpenURL(MonaKeypadLock.Link1);
-        }
+        //if (GUILayout.Button(MonaKeypadLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        //{
+        //    Application.OpenURL(MonaKeypadLock.Link1);
+        //}
 
-        GUILayout.Space(1);
+        //GUILayout.Space(1);
 
-        if (GUILayout.Button(MonaKeypadLock.ButtonTitle2, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        {
-            Application.OpenURL(MonaKeypadLock.Link2);
-        }
+        //if (GUILayout.Button(MonaKeypadLock.ButtonTitle2, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        //{
+        //    Application.OpenURL(MonaKeypadLock.Link2);
+        //}
 
         GUILayout.Space(1);
 
