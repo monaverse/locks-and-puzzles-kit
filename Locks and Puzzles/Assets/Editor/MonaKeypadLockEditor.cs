@@ -53,8 +53,15 @@ public class MonaKeypadLockEditor : Editor
 
         // CREDITS TEXT
 
-        EditorGUILayout.LabelField(MonaKeypadLock.Text1, textStyle, GUILayout.Height(textSize + 4));
-        EditorGUILayout.LabelField(MonaKeypadLock.Text2, textStyle, GUILayout.Height(textSize + 4));
+        if (!string.IsNullOrEmpty(MonaKeypadLock.Text1))
+        {
+            EditorGUILayout.LabelField(MonaKeypadLock.Text1, textStyle, GUILayout.Height(textSize + 4));
+        }
+
+        if (!string.IsNullOrEmpty(MonaKeypadLock.Text2))
+        {
+            EditorGUILayout.LabelField(MonaKeypadLock.Text2, textStyle, GUILayout.Height(textSize + 4));
+        }
 
         // BUTTONS STYLE
 
@@ -65,10 +72,10 @@ public class MonaKeypadLockEditor : Editor
 
         // BUTTONS
 
-        //if (GUILayout.Button(MonaKeypadLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        //{
-        //    Application.OpenURL(MonaKeypadLock.Link1);
-        //}
+        if (GUILayout.Button(MonaKeypadLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        {
+            Application.OpenURL(MonaKeypadLock.Link1);
+        }
 
         //GUILayout.Space(1);
 

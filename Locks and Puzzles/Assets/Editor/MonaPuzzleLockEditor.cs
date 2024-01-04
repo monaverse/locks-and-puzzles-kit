@@ -53,8 +53,15 @@ public class MonaPuzzleLockEditor : Editor
 
         // CREDITS TEXT
 
-        EditorGUILayout.LabelField(MonaPuzzleLock.Text1, textStyle, GUILayout.Height(textSize + 4));
-        EditorGUILayout.LabelField(MonaPuzzleLock.Text2, textStyle, GUILayout.Height(textSize + 4));
+        if (!string.IsNullOrEmpty(MonaPuzzleLock.Text1))
+        {
+            EditorGUILayout.LabelField(MonaPuzzleLock.Text1, textStyle, GUILayout.Height(textSize + 4));
+        }
+
+        if (!string.IsNullOrEmpty(MonaPuzzleLock.Text2))
+        {
+            EditorGUILayout.LabelField(MonaPuzzleLock.Text2, textStyle, GUILayout.Height(textSize + 4));
+        }
 
         // BUTTONS STYLE
 
@@ -65,10 +72,10 @@ public class MonaPuzzleLockEditor : Editor
 
         // BUTTONS
 
-        //if (GUILayout.Button(MonaPuzzleLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
-        //{
-        //    Application.OpenURL(MonaPuzzleLock.Link1);
-        //}
+        if (GUILayout.Button(MonaPuzzleLock.ButtonTitle1, hyperlinkTextStyle, GUILayout.Height(textSize + buttonSpace)))
+        {
+            Application.OpenURL(MonaPuzzleLock.Link1);
+        }
 
         //GUILayout.Space(1);
 
